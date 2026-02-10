@@ -1,0 +1,89 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+input {
+    flex: 0.7;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: rgb(255, 205, 143);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(226, 163, 87);
+}
+
+ul {
+    list-style: decimal;
+    padding: 0;
+}
+
+li {
+    width: 400px;
+    background-color: rgb(226, 141, 43);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+li span {
+    flex: 0.7;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+li button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #e84118;
+}
