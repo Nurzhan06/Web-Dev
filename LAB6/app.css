@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a2e;
+  color: white;
+  padding: 1rem 2rem;
+}
+.brand { font-size: 1.3rem; font-weight: bold; }
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+.nav-links a.active { color: white; border-bottom: 2px solid #e94560; }
+main { padding: 2rem; }

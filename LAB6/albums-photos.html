@@ -1,0 +1,14 @@
+@if (loading) {
+  <div class="loading">Loading photos...</div>
+} @else {
+  <button class="back-btn" (click)="goBack()">← Back to Album</button>
+  <h1>Photos for Album #{{ albumId }}</h1>
+  <div class="photo-grid">
+    @for (photo of photos; track photo.id) {
+      <div class="photo-card">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+        <p class="photo-title">{{ photo.title }}</p>
+      </div>
+    }
+  </div>
+}

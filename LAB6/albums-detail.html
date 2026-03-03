@@ -1,0 +1,18 @@
+@if (loading) {
+  <div class="loading">Loading album...</div>
+} @else if (album) {
+  <div class="detail">
+    <button class="back-btn" (click)="goBack()">← Back</button>
+    <h1>Album #{{ album.id }}</h1>
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+
+    <div class="edit-section">
+      <label>Title:</label>
+      <input [(ngModel)]="editTitle" class="title-input" />
+      <button class="save-btn" (click)="saveAlbum()">Save</button>
+      @if (saveMessage) { <span class="save-msg">{{ saveMessage }}</span> }
+    </div>
+
+    <button class="photos-btn" (click)="viewPhotos()">📷 View Photos</button>
+  </div>
+}

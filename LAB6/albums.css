@@ -1,0 +1,17 @@
+h1 { margin-bottom: 1.5rem; }
+.loading { font-size: 1.2rem; color: #888; text-align: center; margin-top: 3rem; }
+.album-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.album-card {
+  display: flex; align-items: center; gap: 1rem;
+  background: #f9f9f9; border: 1px solid #ddd;
+  border-radius: 8px; padding: 1rem 1.5rem;
+  cursor: pointer; transition: background 0.2s;
+}
+.album-card:hover { background: #eef2ff; }
+.album-id { color: #888; font-size: 0.9rem; min-width: 40px; }
+.album-title { flex: 1; font-size: 1rem; }
+.delete-btn {
+  background: #e94560; color: white; border: none;
+  padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer;
+}
+.delete-btn:hover { background: #c73652; }

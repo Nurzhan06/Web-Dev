@@ -1,0 +1,17 @@
+@if (loading) {
+  <div class="loading">Loading albums...</div>
+} @else {
+  <h1>Albums</h1>
+  <div class="album-list">
+    @for (album of albums; track album.id) {
+      <div class="album-card" (click)="goToDetail(album.id)">
+        <span class="album-id">#{{ album.id }}</span>
+        <span class="album-title">{{ album.title }}</span>
+        <button class="delete-btn" (click)="deleteAlbum(album.id, $event)">🗑 Delete</button>
+      </div>
+    }
+    @if (albums.length === 0) {
+      <p>No albums found.</p>
+    }
+  </div>
+}
